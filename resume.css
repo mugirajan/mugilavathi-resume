@@ -92,8 +92,21 @@ header .navbar ul li a{
 header .navbar ul li a:hover{
     background:#ffff00e0;
 }
-
-
+.menu-bar{
+	background:#ffff00e0;
+	position:absolute;
+	display:none; 
+	top: 100%;
+	right: 0;
+	padding:15px;
+	line-height:2;
+}
+.menu-bar ul li{
+    list-style-type:none;
+}
+.fas{
+    position:relative;
+}
 #menu{
     position: fixed;
     top:2rem;
@@ -304,54 +317,36 @@ section{
     transform:scale(1.2)
 }
 
-/* contcat-section */
-.contact .row{
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    flex-wrap:wrap;
+/* contadt-section */
+
+.content h3{
+    text-align:Center;
 }
 
-.contact .row .content{
+.contact .row{
+    display:flex;
+    height: auto;
+    justify-content:center;
+    flex-wrap:wrap;
+    margin-top: 75px;
+}
+
+/* .contact .row .content{
     flex:1 1 30rem;
     padding:4rem;
     padding-bottom:0;
-}
+} */
 
-.contact .row form{
-    flex:1 1 45rem;
-    padding:2rem;
-    margin:2rem;
-    margin-bottom:4rem;
-}
 
-.contact .row form .box{
-    padding:1.5rem;
-    margin:1rem 0;
-    background:#3333;
-    color:#fff;
-    text-transform:none;
-    font-size:1.7rem;
-    width:100%;
-}
 
-.contact .row form .box::placeholder{
-    text-transform:capitalize;
-}
-
-.contact .row form .message{
-    height:15rem;
-    resize:none;
-}
-
-.contact .row .content .title{
+.contact .row .conten .title{
     text-transform:uppercase;
     color:#fff;
     font-size:3rem;
     padding-bottom:2rem;
 }
 
-.contact .row .content .info h3{
+.contact .row .conten .info h3{
     display: flex;
     align-items:center;
     font-size:2rem;
@@ -359,8 +354,11 @@ section{
     padding:1rem 0;
     font-weight:normal;
 }
+.contact .row .conten .info a{
+    color:#eee;
+}
 
-.contact .row .content .info h3 i{
+.contact .row .conten .info h3 i{
     padding-right:1rem;
     color:#ffff00e0;
 }
@@ -381,7 +379,7 @@ section{
     header{
         left:-120%;
     }
-    #menu{
+    #menu {
         display:block;
     }
     header.toggle{
@@ -416,9 +414,7 @@ section{
     .portfolio .box-container .box{
         width:100%;
     }
-    .contact .row form{
-        margin:3rem 0;
-    }
+    
     
 }
 
